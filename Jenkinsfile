@@ -20,9 +20,9 @@ pipeline {
 
     stage('Build React App') {
       steps {
-        
-        sh 'npm install'
-        sh 'npm run build'
+        dir('/Users/macbookpro/code/jenkin/task2')
+       { sh 'npm install'
+        sh 'npm run build'}
       }
     }
 
