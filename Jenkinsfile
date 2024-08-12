@@ -4,7 +4,7 @@ pipeline {
   environment {
     TAG_NAME = "build_app"
     bucket = "tisha-jenkin-bucket"
-    BuildDir = 'build-folder'
+    BuildDir = 'build'
   }
 
   tools { 
