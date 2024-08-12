@@ -20,7 +20,7 @@ pipeline {
 
     stage('Build React App') {
       steps {
-        dir('/Users/macbookpro/code/jenkin/task2')
+        dir('/Users/macbookpro/code/jenkin/task2/React-DefaultApp')
        { sh 'npm install'
         sh 'npm run build'}
       }
