@@ -23,16 +23,16 @@ pipeline {
 
     stage('Build React App') {
       steps {
-        dir('/Users/macbookpro/code/jenkin/task2/React-DefaultApp')
-       { sh 'npm install'
-        sh 'npm run build'}
+        sh 'cd React-DefaultApp'
+        sh 'npm install'
+        sh 'npm run build'
       }
     }
 
     stage('Deploy to S3') {
             steps {
                 sh '''
-                aws s3 sync build s3://$S3_BUCKET/ --region $AWS_REGION
+                aws s3 sync build/ s3://$S3_BUCKET/ --region $AWS_REGION
                 '''
             }
   }
