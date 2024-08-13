@@ -25,6 +25,7 @@ pipeline {
       steps {
         sh 'ls'
         sh 'cd React-DefaultApp'
+        sh 'ls'
         sh 'npm install'
         sh 'npm run build'
       }
