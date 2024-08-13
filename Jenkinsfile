@@ -3,7 +3,7 @@ pipeline {
   
   environment {
         AWS_REGION = 'ap-south-1'
-        S3_BUCKET = 'tisha-jenkin-bucket ' 
+        S3_BUCKET = 'tisha-jenkin-bucket' 
         PATH = "/usr/local/bin:$PATH"
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
         AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
