@@ -24,7 +24,7 @@ pipeline {
     stage('Build React App') {
       steps {
         sh 'ls'
-        sh 'cd React-DefaultApp'
+        sh 'cd $pwd/React-DefaultApp'
         sh 'ls'
         sh 'npm install'
         sh 'npm run build'
