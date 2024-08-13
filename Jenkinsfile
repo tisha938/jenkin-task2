@@ -32,10 +32,10 @@ pipeline {
     }
 
     stage('Deploy to S3') {
-            steps {
-                sh '''
-                aws s3 sync React-DefaultApp/build/ s3://$S3_BUCKET/ --delete --region $AWS_REGION
-                '''
-            }
+      steps {
+          sh '''
+          aws s3 sync React-DefaultApp/build/ s3://$S3_BUCKET/ --delete --region $AWS_REGION
+          '''
+      }
   }
 }}
